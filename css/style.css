@@ -139,6 +139,15 @@ h2,h3,h4,h5,h6 {
     color: var(--bs-black);
 }
 
+.hero-bg {
+    width: 100%;
+    min-height: 70vh;
+    background-image: url("../images/Diya2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* line height */
 
 p.a {
