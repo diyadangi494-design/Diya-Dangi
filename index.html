@@ -454,6 +454,11 @@
               title="Sample Caption goes here for Portfolio Item 1."><img src="images/GandhiJayanti.jpg"
                 class="img-fluid rounded-4" alt="portfolio"></a>
           </div>
+          <div class="col mb-4 portfolio-item poster-design">
+            <a href="images/GandhiJayanti.jpg" data-lightbox="Poster-8" data-title="Poster-8"
+              title="Sample Caption goes here for Portfolio Item 1."><img src="images/GandhiJayanti.jpg"
+                class="img-fluid rounded-4" alt="portfolio"></a>
+          </div>
          
           <div class="col mb-4 portfolio-item Brochures">
             <a href="images/DRESSINO.jpg" data-lightbox="Post-1" data-title="illustration-1"
@@ -630,138 +635,4 @@ Once finalized, we begin with a smooth onboarding and start delivering designs c
       </div>
     </div>
   </section>
-  <!-- ===== END CONTACT SECTION ===== -->
-
-  <footer id="footer" class="bg-black text-white py-5">
-    <div class="container-sm">
-      <div class="row g-md-5 my-5">
-        <div class="col-md-4">
-          <div class="info-box">
-            <img src="images/logo-2.png" class="img-fluid">
-            <p class="py-4">
-              Subscribe to newsletter to get some updates related with branding, designs and more.
-            </p>
-            <div class="social-links">
-              <svg class="skype" width="24" height="24">
-                <use xlink:href="#skype"></use>
-              </svg>
-              <svg class="snapchat" width="24" height="24">
-                <use xlink:href="#snapchat"></use>
-              </svg>
-              <svg class="telegram" width="24" height="24">
-                <use xlink:href="#telegram"></use>
-              </svg>
-              <svg class="tumblr" width="24" height="24">
-                <use xlink:href="#tumblr"></use>
-              </svg>
-              <svg class="twitter" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg>
-              <svg class="whatsapp" width="24" height="24">
-                <use xlink:href="#whatsapp"></use>
-              </svg>
-              <svg class="github" width="24" height="24">
-                <use xlink:href="#github"></use>
-              </svg>
-              <svg class="facebook" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg>
-              <svg class="messenger" width="24" height="24">
-                <use xlink:href="#messenger"></use>
-              </svg>
-              <svg class="behance" width="24" height="24">
-                <use xlink:href="#behance"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="row">
-            <div class="col-6">
-              <ul class="list-unstyled">
-                <li>
-                  <a class="text-decoration-none text-white" href="index.html">Home</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none text-white" href="#">About</a>
-                </li>
-                <li>
-                  <a class="text-decoration-none text-white" href="index.html">Portfolio</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-6">
-              <h6>
-                <a class="text-decoration-none text-white" href="index.html">Blog</a>
-              </h6>
-              <h6>
-                <a class="text-decoration-none text-white" href="index.html">Contact</a>
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <p>
-            Just feel free to contact if you wanna collaborate with me, or simply have a conversation.
-          </p>
-          <h3>
-            <a href="mailto:contact@yourwebsite.com" class="text-white text-decoration-none">contact@yourwebsite.com</a>
-          </h3>
-        </div>
-      </div>
-      <div class="row">
-        <p>©2024 Diya Dangi. Free HTML Template by <a href="https://templatesjungle.com/" class="text-white"
-            target="_blank">TemplatesJungle</a>. Distributed By <a href="https://themewagon.com" class="text-white"
-            target="blamk">ThemeWagon</a> </p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="js/jquery-1.11.0.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script type="text/javascript" src="js/lightbox.min.js"></script>
-
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-  <script src="js/script.js"></script>
-
-  <!-- ===== WHATSAPP SCRIPT ===== -->
-  <script>
-    function sendToWhatsApp() {
-      var name    = document.getElementById('name').value.trim();
-      var email   = document.getElementById('email').value.trim();
-      var message = document.getElementById('message').value.trim();
-      var errorEl = document.getElementById('wa-error');
-
-      // Basic validation
-      if (!name || !message) {
-        errorEl.style.display = 'block';
-        return;
-      }
-      errorEl.style.display = 'none';
-
-      // Build the WhatsApp message
-      var phone = '917014374591'; // +91 7014374591
-      var text  = 'Hello! My name is ' + name + '.\n'
-                + 'Email: ' + (email || 'N/A') + '\n\n'
-                + 'Message: ' + message;
-
-      var waURL = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(text);
-      window.open(waURL, '_blank');
-    }
-  </script>
-  <!-- ===== END WHATSAPP SCRIPT ===== -->
-
-</body>
-
-</html>
+  
