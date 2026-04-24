@@ -24,7 +24,7 @@
 
   <!--style sheet-->
   <link rel="stylesheet" href="css/style.css">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
 </head>
 
@@ -133,6 +133,7 @@
                 </a>
               </li>
             </ul>
+
           </div>
         </div>
       </div>
@@ -581,23 +582,23 @@
                <img src="images/Rosie Store 2.jpg" class="img-fluid rounded-4" alt="portfolio">
                </a>
           </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 portfolio-item e-invites ">
+          <div class="col-12 col-md-6 col-lg-4 mb-4 portfolio-item e-invites text-center">
                <video width="300" height="500" controls autoplay muted loop poster="thumbnail.jpg">
   <source src="images\Birthday invite.mp4" type="video/mp4">
 </video>
         </div>
 
-          <div class="col-6 col-md-6 col-lg-4 mb-4 portfolio-item e-invites ">
+          <div class="col-12 col-md-6 col-lg-4 mb-4 portfolio-item e-invites text-center">
                <video width="300" height="500" controls autoplay muted loop poster="thumbnail.jpg">
   <source src="images/1 day to go.mp4" type="video/mp4">
 </video>
           </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 portfolio-item e-invites ">
+          <div class="col-12 col-md-6 col-lg-4 mb-4 portfolio-item e-invites text-center">
                <video width="300" height="500" controls autoplay muted loop poster="thumbnail.jpg">
   <source src="images/Wedding invite 1.mp4" type="video/mp4">
 </video>
           </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 portfolio-item e-invites ">
+          <div class="col-12 col-md-6 col-lg-4 mb-4 portfolio-item e-invites text-center">
                <video width="300" height="500" controls autoplay muted loop poster="thumbnail.jpg">
   <source src="images/Save the date with aud.mp4" type="video/mp4">
 </video>
@@ -726,7 +727,21 @@ Once finalized, we begin with a smooth onboarding and start delivering designs c
           <h2 class="display-3">
             Leave a Message
           </h2>
+          <div class="mb-3">
+            <p>Have a project in mind? Fill out the form and I'll get back to you as soon as possible!</p>
+          </div>
+
+          
+          <div class="">
+            <a href="https://www.instagram.com/mediyadesigns_by_diya?igsh=MTBjOGV1a3VvZ3d6dw==" target="_blank" class="btn btn-lg ">
+              <i style="font-size: 30px;" class="bi bi-instagram"></i>
+            </a>
          
+            <a href="https://www.behance.net/diyadangi" target="_blank" class="btn btn-lg ">
+              <i style="font-size: 30px;" class="bi bi-behance"></i>
+            </a>
+            </div>
+
         </div>
         <div class="col-md-5">
           <div class="mb-3">
@@ -795,6 +810,30 @@ Once finalized, we begin with a smooth onboarding and start delivering designs c
       }
     });
   </script>
+
+  <script>
+  function sendToWhatsApp() {
+    var name    = document.getElementById('name').value.trim();
+    var email   = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+
+    if (!name || !message) {
+      document.getElementById('wa-error').style.display = 'block';
+      return;
+    }
+
+    document.getElementById('wa-error').style.display = 'none';
+
+    var phone = '917014374591'; // ← replace with your WhatsApp number (country code + number, no + or spaces)
+    var text  = 'Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message;
+    var url   = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(text);
+    window.open(url, '_blank');
+  }
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
 </body>
 </html>
   
